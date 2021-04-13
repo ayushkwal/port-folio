@@ -12,6 +12,21 @@
     </style>
     <!-- font-family: 'Merriweather', serif; -->
 <body>
+    <div class = "nav">
+        <ul id="nav_ul">
+            <li class="navli"><a href="#skills">Skills</a></li>
+            <li class="navli"><a href="#secpro">Projects</a></li>
+            <li class="navli"><a href="#sec4">About Me</a></li>
+            <li class="navli"><a href="#sec5">Contact Me</a></li>
+            <li class="navli"><a href="#sec6">Details</a></li>
+        </ul>
+        <ul id = "hamburger">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
     <section class = "sec1">
         <div id = "name">
     <h1>Ayush Khandelwal<span></span></h1><h1>Web Developer<span></span></h1>
@@ -47,40 +62,40 @@
     </div>
 </section>
 
-<section class="sec3">
+<section class="sec3" id="secpro">
     <h1>PROJECTS</h1>
     <div class = "projects">
     <div id="project">
         <button class = "portbtn">View Project</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis quod neque cumque ea quis laboriosam esse enim aliquam dolorem?</p>
-    <img src="./images/pexels-anna-nekrashevich-6603481.jpg" width="300px" height="300px">
+    <img src="./images/pexels-ken-tomita-389818.jpg" width="300px" height="300px">
         <h3>HEALTH TRACKER</h3><hr>
         </div>
     <div id="project">
         <button class = "portbtn">View Project</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis quod neque cumque ea quis laboriosam esse enim aliquam dolorem?</p>
-        <img src="./images/pexels-anna-nekrashevich-6603481.jpg" width="300px" height="300px">
+        <img src="./images/pexels-ken-tomita-389818.jpg" width="300px" height="300px">
         <h3>Form-Authentication</h3><hr>
        
     </div>
     <div id="project">
         <button class = "portbtn">View Project</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis quod neque cumque ea quis laboriosam esse enim aliquam dolorem?</p>
-        <img src="./images/pexels-anna-nekrashevich-6603481.jpg" width="300px" height="300px">
+        <img src="./images/pexels-ken-tomita-389818.jpg" width="300px" height="300px">
         <h3>Git-Profile</h3><hr>
         
     </div>
     <div id="project">
         <button class = "portbtn">View Project</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis quod neque cumque ea quis laboriosam esse enim aliquam dolorem?</p>
-        <img src="./images/pexels-anna-nekrashevich-6603481.jpg" width="300px" height="300px">
+        <img src="./images/pexels-ken-tomita-389818.jpg" width="300px" height="300px">
         <h3>Insta-Tracker</h3><hr>
         
     </div>
     <div id="project">
         <button class = "portbtn">View Project</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis quod neque cumque ea quis laboriosam esse enim aliquam dolorem?</p>
- <img src="./images/pexels-anna-nekrashevich-6603481.jpg" width="300px" height="300px">
+ <img src="./images/pexels-ken-tomita-389818.jpg" width="300px" height="300px">
         <h3>Portfolio</h3><hr>
        
     </div>
@@ -88,7 +103,7 @@
     <div id="project">
         <button class = "portbtn">View Project</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis quod neque cumque ea quis laboriosam esse enim aliquam dolorem?</p>
-        <img src="./images/pexels-anna-nekrashevich-6603481.jpg" width="300px" height="300px">
+        <img src="./images/pexels-ken-tomita-389818.jpg" width="300px" height="300px">
         <h3>Passport Authentication</h3><hr>
     </div>
 </div>
@@ -103,7 +118,7 @@
     </div>
 </section>
 <section id="sec5">
-    <h1>Contact Us</h1>
+    <h1>Contact Me</h1>
     <div id = "contacts">
         <div class = "contact" id = "fb"><a href = "www.google.com">
            <div id = "fb_img iicon"> <img src="https://img.icons8.com/ios-filled/150/000000/facebook-new.png"/></div></a>
@@ -142,5 +157,28 @@
         <h3>LinkedIn: <span>ayushkhandelwal756</span></h3>
     </div>
 </section>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navul = document.getElementById('nav_ul');
+    const navli = document.getElementsByClassName('navli');
+    const nav = document.querySelector('.nav')
+    hamburger.addEventListener('click',()=>{
+        
+        console.log(nav_ul.style.opacity);
+        if(nav_ul.style.opacity==''||nav_ul.style.opacity=='1')
+        {
+            nav_ul.style.opacity=0;
+            nav.style.height="84px";
+        }
+        else{
+            nav_ul.style.opacity=1;
+            nav.style.height="584px";
+        }
+
+    })
+    nav_ul.addEventListener('click',()=>{
+        nav_ul.style.opacity=0;
+    })
+</script>
 </body>
 </html>
